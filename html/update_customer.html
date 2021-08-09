@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register updated</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/create_customer.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="show_customers.html">Customers </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao create">
+            <h1 class="cartao__titulo">Update</h1>
+            <form action="#" class="flex flex--coluna" data-form>
+                <div class="input-container">
+                    <input name="name" id="name" class="input" type="text" placeholder="Name" required data-name>
+                    <label class="input-label" for="name">Name</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="text" placeholder="email" required data-email>
+                    <label class="input-label" for="email">email</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <button type="submit"class="botao">
+                    Save
+                </button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+<script type="module" src="../controller/updateCustomer-controller.js"></script>
+</html>
